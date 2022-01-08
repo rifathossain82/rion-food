@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">rion food</string>
+    <string name="facebook_app_id" translatable="false">247631786976794</string>
+    <string name="fb_login_protocol_scheme" translatable="false">fb247631786976794</string>
+    <string name="welcome">Welcome</string>
+    <string name="name">Rifat Hossain</string>
+    <string name="thank">Thank You</string>
+    <string name="chang">Change Language</string>
+    <string name="open_navigation_drawer" translatable="false">Open Navigation Drawer</string>
+    <string name="close_navigation_drawer" translatable="false">Close Navigation Drawer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="t1">
+        These Terms of Use (“Terms”) govern your use of the websites and mobile applications provided by foodpanda (or referred to as “us”) (collectively the “Platforms”). Please read these Terms carefully. By accessing and using the Platforms, you agree that you have read, understood and accepted the Terms including any additional terms and conditions and any policies referenced herein, available on the Platforms or available by hyperlink. If you do not agree or fall within the Terms, please do not use the Platforms.
+            </string>
+    <string name="t2">
+The Platforms may be used by (i) natural persons who have reached 18 years of age and (ii) corporate legal entities, e.g companies. Where applicable, these Terms shall be subject to country-specific provisions as set out herein.
+</string>
+    <string name="t3">
+Users below the age of 18 must obtain consent from parent(s) or legal guardian(s), who by accepting these Terms shall agree to take responsibility for your actions and any charges associated with your use of the Platforms and/or purchase of Goods. If you do not have consent from your parent(s) or legal guardian(s), you must stop using/accessing the Platforms immediately.
+</string>
+    <string name="t4">
+foodpanda reserves the right to change or modify these Terms (including our policies which are incorporated into these Terms) at any time. You are strongly recommended to read these Terms regularly. You will be deemed to have agreed to the amended Terms by your continued use of the Platforms following the date on which the amended Terms are posted.
+</string>
+
+    <string-array name="status">
+        <item>Order</item>
+        <item>Cooking</item>
+        <item>Packaging</item>
+        <item>Prepared</item>
+        <item>Pass</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

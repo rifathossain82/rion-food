@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".customer.HelpCenter_customer">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/toolbar_"
+        android:elevation="5dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:drawableStart="@drawable/ic_close"
+            android:id="@+id/back_help_customer"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Help center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#202020"
+            android:padding="15dp"/>
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/pink"
+                android:text="How can we help?"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:padding="15dp"
+                />
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/recycler_help_customer"
+                android:layout_margin="15dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="#D60056"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

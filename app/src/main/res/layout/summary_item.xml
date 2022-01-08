@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+  <LinearLayout
+      android:gravity="center"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="4x Bhaji"
+          android:paddingTop="10dp"
+          android:paddingBottom="10dp"
+          android:textColor="#2B2B2B"
+          android:id="@+id/item_name_summary"
+          />
+
+      <TextView
+          android:gravity="end"
+          android:layout_weight="1"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:text="Tk 90"
+          android:paddingTop="10dp"
+          android:paddingBottom="10dp"
+          android:textColor="#2B2B2B"
+          android:id="@+id/item_price_summary"
+          />
+  </LinearLayout>
+
+</LinearLayout>

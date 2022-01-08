@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:layout_gravity="center"
+    app:cardCornerRadius="15dp"
+    android:backgroundTint="#FFFFFF"
+    android:background="#FFFFFF">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Terms of use"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:padding="15dp"
+        android:layout_marginTop="5dp"
+        android:textColor="#292929"
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/t1"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:layout_marginTop="5dp"
+                android:textColor="#292929"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/t2"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:layout_marginTop="5dp"
+                android:textColor="#292929"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/t3"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:layout_marginTop="5dp"
+                android:textColor="#292929"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/t4"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:layout_marginTop="5dp"
+                android:textColor="#292929"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="rion food."
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:layout_marginTop="25dp"
+                android:textColor="#292929"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OK"
+                android:layout_gravity="end"
+                android:gravity="end"
+                android:padding="15dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#292929"
+                android:layout_marginBottom="20dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/btn_cancel"
+                android:id="@+id/ok_terms"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

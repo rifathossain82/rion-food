@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+    <item android:title="rion food">
+    <menu>
+        <group android:checkableBehavior="single" >
+            <item
+                android:id="@+id/nav_home"
+                android:icon="@drawable/ic_home"
+                android:title="Home" />
+            <item
+                android:id="@+id/nav_cart"
+                android:icon="@drawable/ic_cart"
+                android:title="Cart" />
+            <item
+                android:id="@+id/nav_order"
+                android:icon="@drawable/ic_order2"
+                android:title="Orders" />
+            <item
+                android:id="@+id/nav_profile"
+                android:icon="@drawable/ic_person2"
+                android:title="Profile" />
+            <item
+                android:id="@+id/nav_help"
+                android:icon="@drawable/ic_help"
+                android:title="Help Center" />
+        </group>
+
+    </menu>
+    </item>
+
+    <item
+        android:id="@+id/nav_setting"
+        android:title="Settings" />
+    <item
+        android:id="@+id/nav_privacy"
+        android:title="Terms &amp; Conditions / Privacy" />
+    <item
+        android:id="@+id/nav_logout_customer"
+        android:title="Log out" />
+
+</menu>

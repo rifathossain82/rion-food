@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".customer.Home_Fragment_costumer">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="start"
+            android:padding="15dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Morning, Rifat"
+                android:textStyle="bold"
+                android:textColor="#222222"
+                android:textSize="18sp"
+                android:id="@+id/show_name_homeID"
+                />
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Breakfast time? There are 196 restaurants in your area."
+                android:textColor="#222222"
+                android:id="@+id/show_eatTime_id"
+                />
+        </LinearLayout>
+        <!---->
+        <ImageView
+            android:layout_weight="1.5"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:src="@drawable/food1"
+            android:scaleType="centerCrop"/>
+    </LinearLayout>
+    <EditText
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Search for shops &amp; restaurants"
+        android:drawableStart="@drawable/ic_search"
+        android:paddingStart="10dp"
+        android:drawablePadding="15dp"
+        android:background="@drawable/search_layout"
+        android:elevation="8dp"
+        android:id="@+id/search_homeID"
+        android:editable="false"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recyclerview_offer_id"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recyclerview_item_id"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="20dp"
+        />
+
+
+
+
+
+
+</LinearLayout>
+</ScrollView>

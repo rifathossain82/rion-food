@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/liner_id_help_item"
+    android:orientation="vertical">
+
+  <LinearLayout
+      android:layout_gravity="center"
+      android:gravity="center|start"
+      android:layout_marginBottom="20dp"
+      android:layout_marginTop="20dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+      <ImageView
+          android:id="@+id/icon_help_item"
+          android:layout_width="30dp"
+          android:layout_height="30dp"
+          android:src="@drawable/ic_person2"/>
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="My Account"
+          android:padding="10dp"
+          android:textColor="#333333"
+          android:layout_marginLeft="10dp"
+          android:id="@+id/subject_help_item"
+          android:visibility="visible"
+          android:drawableEnd="@drawable/ic_keyboard_arrow_right_black_24dp"
+          />
+  </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="1"
+        android:background="?android:attr/listDivider" />
+
+</LinearLayout>

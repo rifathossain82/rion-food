@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="280dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="#FFFFFF"
+    android:backgroundTint="#FFFFFF"
+    android:gravity="center"
+    android:orientation="vertical"
+    app:cardCornerRadius="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:padding="15dp"
+            android:text="Filter by"
+            android:textColor="#292929"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/filter_radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/date_filter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:paddingLeft="10dp"
+                android:text="Date"
+                android:onClick="date_selection"
+                android:checked="true"
+                android:buttonTint="#B8004A"/>
+
+            <RadioButton
+                android:id="@+id/month_filter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:paddingLeft="10dp"
+                android:text="Month"
+                android:buttonTint="#B8004A" />
+
+            <RadioButton
+                android:id="@+id/year_filter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:paddingLeft="10dp"
+                android:text="Year"
+                android:buttonTint="#B8004A"/>
+
+
+
+        </RadioGroup>
+        <TextView
+            android:id="@+id/select_filter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_log_out"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="Select Date"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"/>
+
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

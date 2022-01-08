@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linerId_hotel"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:cardCornerRadius="10dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/hotel"
+            android:scaleType="centerCrop"
+            android:id="@+id/imageView_hotel"
+            />
+
+        <TextView
+            android:id="@+id/off_hotel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:padding="8dp"
+            android:background="@drawable/btn_layout2"
+            android:text="10% off"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:textColor="#FFFFFF" />
+    </androidx.cardview.widget.CardView>
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Feni Nabab Biryani House"
+                android:textColor="#353535"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:id="@+id/name_hotel"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="45 min"
+                android:textColor="#353535"
+                android:textSize="16sp"
+                android:id="@+id/time_hotel"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tk 13 Delivery fee"
+                android:textColor="#151515"
+                android:textSize="16sp"
+                android:id="@+id/deliver_fee_hotel"
+                android:layout_marginBottom="20dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/star_hotel"
+            android:gravity="center|end"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:drawableStart="@drawable/ic_star"
+            android:text="3.3"/>
+
+        <TextView
+            android:gravity="top|start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/review_hotel"
+            android:paddingEnd="10dp"
+            android:text=" (158)"/>
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

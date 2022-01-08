@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".chef.Pass_orderFragment">
+    <jp.co.recruit_lifestyle.android.widget.WaveSwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/refresh_id_passOrder">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:background="#FFFFFF"
+                android:elevation="2dp"
+                android:layout_gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_filter"
+                    android:padding="15dp"
+                    android:id="@+id/filter_pass_order"/>
+                <EditText
+                    android:layout_weight="1"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Search for pass order"
+                    android:paddingStart="20dp"
+                    android:padding="15dp"
+                    android:background="@drawable/search_layout2"
+                    android:id="@+id/pass_order_search"
+                    />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="#202020"
+                android:text="Pass orders"
+                android:padding="15dp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/linerID_filter_show"
+                android:visibility="gone">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#202020"
+                    android:text="Filter by : 05 Jul, 2021"
+                    android:paddingStart="15dp"
+                    android:paddingBottom="15dp"
+                    android:id="@+id/show_filter"/>
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:textColor="#202020"
+                    android:paddingStart="15dp"
+                    android:paddingBottom="15dp"
+                    android:drawableEnd="@drawable/circle_close"
+                    android:layout_marginTop="-1dp"
+                    android:id="@+id/close_filter"
+                    />
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycler_pass_order"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+    </jp.co.recruit_lifestyle.android.widget.WaveSwipeRefreshLayout>
+
+</LinearLayout>
